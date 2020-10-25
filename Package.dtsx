@@ -1,0 +1,2056 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="10/24/2020 5:30:24 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-QFHUVFB"
+  DTS:CreatorName="DESKTOP-QFHUVFB\Skayz"
+  DTS:DTSID="{0A50385E-F7D6-446C-926F-57E236EEEE03}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.132"
+  DTS:LocaleID="13322"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="19"
+  DTS:VersionGUID="{F470E678-F758-44F9-BA79-6DF7AB121B24}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{3684E6A6-34C0-4F59-B5C8-C69993820690}"
+      DTS:ObjectName="Administrador de conexiones con Excel">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Skayz\Desktop\120 años de historia olímpica deportistas y resultados\Eventos_Atleticos.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel 1]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{625F572D-2888-439E-915C-C5FCDFAE53CB}"
+      DTS:ObjectName="Administrador de conexiones con Excel 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Skayz\Desktop\120 años de historia olímpica deportistas y resultados\Regiones.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel 2]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{5D5B1E38-F8A4-434D-9196-6BA6A58E1C62}"
+      DTS:ObjectName="Administrador de conexiones con Excel 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Skayz\Desktop\120 años de historia olímpica deportistas y resultados\Poblacion.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel 3]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{F7A43C95-2A42-4543-9037-393B4B413BBF}"
+      DTS:ObjectName="Administrador de conexiones con Excel 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Skayz\Desktop\120 años de historia olímpica deportistas y resultados\Paises.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel 4]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{7BCBC43B-F797-4969-B365-73F4E9EC48C2}"
+      DTS:ObjectName="Administrador de conexiones con Excel 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Skayz\Desktop\120 años de historia olímpica deportistas y resultados\Poblacion.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel 5]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{16E2DB7A-6C84-4752-9A5B-540C17642A2B}"
+      DTS:ObjectName="Administrador de conexiones con Excel 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Skayz\Desktop\120 años de historia olímpica deportistas y resultados\caca.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Asociones por equipo y de medallas ganadas"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{CCBB23A0-FE02-4EF2-92DA-A5B0052956A4}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Asociones por equipo y de medallas ganadas"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Normalizacion atletas"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{62F64901-0CCD-405D-86A0-8395E178185D}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Normalizacion atletas"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Normalizacion atletas\Creacion tabla atletas"
+              componentClassID="Microsoft.ExcelDestination"
+              contactInfo="Excel Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Excel Destination"
+              name="Creacion tabla atletas"
+              usesDispositions="true">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">TABLA_DE_ATLETAS$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Normalizacion atletas\Creacion tabla atletas.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Normalizacion atletas\Creacion tabla atletas.Inputs[Excel Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Excel Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Normalizacion atletas\Creacion tabla atletas.Inputs[Excel Destination Input].Columns[ID]"
+                      cachedDataType="r8"
+                      cachedName="ID"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Normalizacion atletas\Creacion tabla atletas.Inputs[Excel Destination Input].ExternalColumns[ID]"
+                      lineageId="Package\Normalizacion atletas\Ordenar y eliminar duplicados.Outputs[Sort Output].Columns[ID]" />
+                    <inputColumn
+                      refId="Package\Normalizacion atletas\Creacion tabla atletas.Inputs[Excel Destination Input].Columns[Name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Name"
+                      externalMetadataColumnId="Package\Normalizacion atletas\Creacion tabla atletas.Inputs[Excel Destination Input].ExternalColumns[NOMBRE]"
+                      lineageId="Package\Normalizacion atletas\Ordenar y eliminar duplicados.Outputs[Sort Output].Columns[Name]" />
+                    <inputColumn
+                      refId="Package\Normalizacion atletas\Creacion tabla atletas.Inputs[Excel Destination Input].Columns[Sex]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Sex"
+                      externalMetadataColumnId="Package\Normalizacion atletas\Creacion tabla atletas.Inputs[Excel Destination Input].ExternalColumns[SEXO]"
+                      lineageId="Package\Normalizacion atletas\Ordenar y eliminar duplicados.Outputs[Sort Output].Columns[Sex]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Normalizacion atletas\Creacion tabla atletas.Inputs[Excel Destination Input].ExternalColumns[ID]"
+                      dataType="wstr"
+                      length="255"
+                      name="ID" />
+                    <externalMetadataColumn
+                      refId="Package\Normalizacion atletas\Creacion tabla atletas.Inputs[Excel Destination Input].ExternalColumns[NOMBRE]"
+                      dataType="wstr"
+                      length="255"
+                      name="NOMBRE" />
+                    <externalMetadataColumn
+                      refId="Package\Normalizacion atletas\Creacion tabla atletas.Inputs[Excel Destination Input].ExternalColumns[SEXO]"
+                      dataType="wstr"
+                      length="255"
+                      name="SEXO" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Normalizacion atletas\Creacion tabla atletas.Outputs[Excel Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Excel Destination Error Output"
+                  synchronousInputId="Package\Normalizacion atletas\Creacion tabla atletas.Inputs[Excel Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Normalizacion atletas\Creacion tabla atletas.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Normalizacion atletas\Creacion tabla atletas.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Normalizacion atletas\Creacion tabla atletas.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Normalizacion atletas\Creacion tabla atletas.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Normalizacion atletas\Datos Atletas Fuente"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="Datos Atletas Fuente"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Eventos_Atleticos$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Normalizacion atletas\Datos Atletas Fuente.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].Columns[ID]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].ExternalColumns[ID]"
+                      lineageId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].Columns[ID]"
+                      name="ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].Columns[Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].ExternalColumns[Name]"
+                      length="255"
+                      lineageId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].Columns[Name]"
+                      name="Name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].Columns[Sex]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].ExternalColumns[Sex]"
+                      length="255"
+                      lineageId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].Columns[Sex]"
+                      name="Sex"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].ExternalColumns[ID]"
+                      dataType="r8"
+                      name="ID" />
+                    <externalMetadataColumn
+                      refId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].ExternalColumns[Name]"
+                      dataType="wstr"
+                      length="255"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].ExternalColumns[Sex]"
+                      dataType="wstr"
+                      length="255"
+                      name="Sex" />
+                    <externalMetadataColumn
+                      refId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].ExternalColumns[Age]"
+                      dataType="wstr"
+                      length="255"
+                      name="Age" />
+                    <externalMetadataColumn
+                      refId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].ExternalColumns[Height]"
+                      dataType="wstr"
+                      length="255"
+                      name="Height" />
+                    <externalMetadataColumn
+                      refId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].ExternalColumns[Weight]"
+                      dataType="wstr"
+                      length="255"
+                      name="Weight" />
+                    <externalMetadataColumn
+                      refId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].ExternalColumns[Games]"
+                      dataType="wstr"
+                      length="255"
+                      name="Games" />
+                    <externalMetadataColumn
+                      refId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].ExternalColumns[Year]"
+                      dataType="r8"
+                      name="Year" />
+                    <externalMetadataColumn
+                      refId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].ExternalColumns[Season]"
+                      dataType="wstr"
+                      length="255"
+                      name="Season" />
+                    <externalMetadataColumn
+                      refId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].ExternalColumns[City]"
+                      dataType="wstr"
+                      length="255"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].ExternalColumns[Sport]"
+                      dataType="wstr"
+                      length="255"
+                      name="Sport" />
+                    <externalMetadataColumn
+                      refId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].ExternalColumns[Event]"
+                      dataType="wstr"
+                      length="255"
+                      name="Event" />
+                    <externalMetadataColumn
+                      refId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].ExternalColumns[Medal]"
+                      dataType="wstr"
+                      length="255"
+                      name="Medal" />
+                    <externalMetadataColumn
+                      refId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].ExternalColumns[NOC]"
+                      dataType="wstr"
+                      length="255"
+                      name="NOC" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Error Output].Columns[ID]"
+                      dataType="r8"
+                      lineageId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Error Output].Columns[ID]"
+                      name="ID" />
+                    <outputColumn
+                      refId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Error Output].Columns[Name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Error Output].Columns[Name]"
+                      name="Name" />
+                    <outputColumn
+                      refId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Error Output].Columns[Sex]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Error Output].Columns[Sex]"
+                      name="Sex" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Normalizacion atletas\Ordenar y eliminar duplicados"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Ordenar y eliminar duplicados"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Normalizacion atletas\Ordenar y eliminar duplicados.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Normalizacion atletas\Ordenar y eliminar duplicados.Inputs[Sort Input].Columns[ID]"
+                      cachedDataType="r8"
+                      cachedName="ID"
+                      lineageId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].Columns[ID]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Normalizacion atletas\Ordenar y eliminar duplicados.Inputs[Sort Input].Columns[Name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Name"
+                      lineageId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].Columns[Name]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Normalizacion atletas\Ordenar y eliminar duplicados.Inputs[Sort Input].Columns[Sex]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Sex"
+                      lineageId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].Columns[Sex]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Normalizacion atletas\Ordenar y eliminar duplicados.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Normalizacion atletas\Ordenar y eliminar duplicados.Outputs[Sort Output].Columns[ID]"
+                      dataType="r8"
+                      lineageId="Package\Normalizacion atletas\Ordenar y eliminar duplicados.Outputs[Sort Output].Columns[ID]"
+                      name="ID"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].Columns[ID]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Normalizacion atletas\Ordenar y eliminar duplicados.Outputs[Sort Output].Columns[Name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Normalizacion atletas\Ordenar y eliminar duplicados.Outputs[Sort Output].Columns[Name]"
+                      name="Name">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].Columns[Name]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Normalizacion atletas\Ordenar y eliminar duplicados.Outputs[Sort Output].Columns[Sex]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Normalizacion atletas\Ordenar y eliminar duplicados.Outputs[Sort Output].Columns[Sex]"
+                      name="Sex">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].Columns[Sex]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Normalizacion atletas\Tranformar Abreviacion M"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Tranformar Abreviacion M"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Normalizacion atletas\Tranformar Abreviacion M.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Normalizacion atletas\Tranformar Abreviacion M.Inputs[Derived Column Input].Columns[Sex]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Sex"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].Columns[Sex]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[REPLACE](#{Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].Columns[Sex]},"M","MASCULINO")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">REPLACE(Sex,"M","MASCULINO")</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Normalizacion atletas\Tranformar Abreviacion M.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Normalizacion atletas\Tranformar Abreviacion M.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Normalizacion atletas\Tranformar Abreviacion M.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Normalizacion atletas\Tranformar Abreviacion M.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Normalizacion atletas\Tranformar Abreviacion M.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Normalizacion atletas\Tranformar Abreviacion M.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Normalizacion atletas\Tranformar Abreviacion M.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Normalizacion atletas\Tranformar Abreviacion M.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Normalizacion atletas\Transformar a Mayuscula"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Transformar a Mayuscula"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Normalizacion atletas\Transformar a Mayuscula.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Normalizacion atletas\Transformar a Mayuscula.Inputs[Derived Column Input].Columns[Name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Name"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].Columns[Name]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[UPPER](#{Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].Columns[Name]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">UPPER(Name)</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Normalizacion atletas\Transformar a Mayuscula.Inputs[Derived Column Input].Columns[Sex]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Sex"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].Columns[Sex]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[UPPER](#{Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].Columns[Sex]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">UPPER(Sex)</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Normalizacion atletas\Transformar a Mayuscula.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Normalizacion atletas\Transformar a Mayuscula.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Normalizacion atletas\Transformar a Mayuscula.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Normalizacion atletas\Transformar a Mayuscula.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Normalizacion atletas\Transformar a Mayuscula.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Normalizacion atletas\Transformar a Mayuscula.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Normalizacion atletas\Transformar a Mayuscula.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Normalizacion atletas\Transformar a Mayuscula.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Normalizacion atletas\Transformar abreviacion F"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Transformar abreviacion F"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Normalizacion atletas\Transformar abreviacion F.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Normalizacion atletas\Transformar abreviacion F.Inputs[Derived Column Input].Columns[Sex]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Sex"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].Columns[Sex]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[REPLACE](#{Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output].Columns[Sex]},"F","FEMENINO")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">REPLACE(Sex,"F","FEMENINO")</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Normalizacion atletas\Transformar abreviacion F.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Normalizacion atletas\Transformar abreviacion F.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Normalizacion atletas\Transformar abreviacion F.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Normalizacion atletas\Transformar abreviacion F.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Normalizacion atletas\Transformar abreviacion F.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Normalizacion atletas\Transformar abreviacion F.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Normalizacion atletas\Transformar abreviacion F.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Normalizacion atletas\Transformar abreviacion F.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Normalizacion atletas.Paths[Derived Column Output]"
+              endId="Package\Normalizacion atletas\Ordenar y eliminar duplicados.Inputs[Sort Input]"
+              name="Derived Column Output"
+              startId="Package\Normalizacion atletas\Transformar a Mayuscula.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Normalizacion atletas.Paths[Derived Column Output1]"
+              endId="Package\Normalizacion atletas\Transformar abreviacion F.Inputs[Derived Column Input]"
+              name="Derived Column Output"
+              startId="Package\Normalizacion atletas\Tranformar Abreviacion M.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Normalizacion atletas.Paths[Derived Column Output2]"
+              endId="Package\Normalizacion atletas\Transformar a Mayuscula.Inputs[Derived Column Input]"
+              name="Derived Column Output"
+              startId="Package\Normalizacion atletas\Transformar abreviacion F.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Normalizacion atletas.Paths[Excel Source Output]"
+              endId="Package\Normalizacion atletas\Tranformar Abreviacion M.Inputs[Derived Column Input]"
+              name="Excel Source Output"
+              startId="Package\Normalizacion atletas\Datos Atletas Fuente.Outputs[Excel Source Output]" />
+            <path
+              refId="Package\Normalizacion atletas.Paths[Sort Output]"
+              endId="Package\Normalizacion atletas\Creacion tabla atletas.Inputs[Excel Destination Input]"
+              name="Sort Output"
+              startId="Package\Normalizacion atletas\Ordenar y eliminar duplicados.Outputs[Sort Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Union Bases de datos"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{65e80552-d9d4-4113-b632-67d43a299d90}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Union Bases de datos"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Union Bases de datos\BD Eventos Olimpicos"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="BD Eventos Olimpicos"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Eventos_Atleticos$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Union Bases de datos\BD Eventos Olimpicos.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Output].Columns[NOC]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Output].ExternalColumns[NOC]"
+                      length="255"
+                      lineageId="Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Output].Columns[NOC]"
+                      name="NOC"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Output].ExternalColumns[ID]"
+                      dataType="r8"
+                      name="ID" />
+                    <externalMetadataColumn
+                      refId="Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Output].ExternalColumns[Name]"
+                      dataType="wstr"
+                      length="255"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Output].ExternalColumns[Sex]"
+                      dataType="wstr"
+                      length="255"
+                      name="Sex" />
+                    <externalMetadataColumn
+                      refId="Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Output].ExternalColumns[Age]"
+                      dataType="wstr"
+                      length="255"
+                      name="Age" />
+                    <externalMetadataColumn
+                      refId="Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Output].ExternalColumns[Height]"
+                      dataType="wstr"
+                      length="255"
+                      name="Height" />
+                    <externalMetadataColumn
+                      refId="Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Output].ExternalColumns[Weight]"
+                      dataType="wstr"
+                      length="255"
+                      name="Weight" />
+                    <externalMetadataColumn
+                      refId="Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Output].ExternalColumns[Games]"
+                      dataType="wstr"
+                      length="255"
+                      name="Games" />
+                    <externalMetadataColumn
+                      refId="Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Output].ExternalColumns[Year]"
+                      dataType="r8"
+                      name="Year" />
+                    <externalMetadataColumn
+                      refId="Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Output].ExternalColumns[Season]"
+                      dataType="wstr"
+                      length="255"
+                      name="Season" />
+                    <externalMetadataColumn
+                      refId="Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Output].ExternalColumns[City]"
+                      dataType="wstr"
+                      length="255"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Output].ExternalColumns[Sport]"
+                      dataType="wstr"
+                      length="255"
+                      name="Sport" />
+                    <externalMetadataColumn
+                      refId="Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Output].ExternalColumns[Event]"
+                      dataType="wstr"
+                      length="255"
+                      name="Event" />
+                    <externalMetadataColumn
+                      refId="Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Output].ExternalColumns[Medal]"
+                      dataType="wstr"
+                      length="255"
+                      name="Medal" />
+                    <externalMetadataColumn
+                      refId="Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Output].ExternalColumns[NOC]"
+                      dataType="wstr"
+                      length="255"
+                      name="NOC" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Error Output].Columns[NOC]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Error Output].Columns[NOC]"
+                      name="NOC" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Union Bases de datos\BD Paises"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="BD Paises"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Paises$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Union Bases de datos\BD Paises.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel 3]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Output].Columns[Codigo Pais]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Output].ExternalColumns[Codigo Pais]"
+                      length="255"
+                      lineageId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Output].Columns[Codigo Pais]"
+                      name="Codigo Pais"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Output].Columns[Pais]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Output].ExternalColumns[Pais]"
+                      length="255"
+                      lineageId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Output].Columns[Pais]"
+                      name="Pais"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Output].Columns[Continente]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Output].ExternalColumns[Continente]"
+                      length="255"
+                      lineageId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Output].Columns[Continente]"
+                      name="Continente"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Output].ExternalColumns[Codigo Pais]"
+                      dataType="wstr"
+                      length="255"
+                      name="Codigo Pais" />
+                    <externalMetadataColumn
+                      refId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Output].ExternalColumns[Pais]"
+                      dataType="wstr"
+                      length="255"
+                      name="Pais" />
+                    <externalMetadataColumn
+                      refId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Output].ExternalColumns[Continente]"
+                      dataType="wstr"
+                      length="255"
+                      name="Continente" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Error Output].Columns[Codigo Pais]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Error Output].Columns[Codigo Pais]"
+                      name="Codigo Pais" />
+                    <outputColumn
+                      refId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Error Output].Columns[Pais]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Error Output].Columns[Pais]"
+                      name="Pais" />
+                    <outputColumn
+                      refId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Error Output].Columns[Continente]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Error Output].Columns[Continente]"
+                      name="Continente" />
+                    <outputColumn
+                      refId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Union Bases de datos\Excel Destination"
+              componentClassID="Microsoft.ExcelDestination"
+              contactInfo="Excel Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Excel Destination"
+              name="Excel Destination"
+              usesDispositions="true">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Excel_Destination$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Union Bases de datos\Excel Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel 5]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel 5]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Union Bases de datos\Excel Destination.Inputs[Excel Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Excel Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Union Bases de datos\Excel Destination.Inputs[Excel Destination Input].Columns[Pais]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Pais"
+                      externalMetadataColumnId="Package\Union Bases de datos\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[Pais]"
+                      lineageId="Package\Union Bases de datos\Merge Join.Outputs[Merge Join Output].Columns[Pais]" />
+                    <inputColumn
+                      refId="Package\Union Bases de datos\Excel Destination.Inputs[Excel Destination Input].Columns[Continente]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Continente"
+                      externalMetadataColumnId="Package\Union Bases de datos\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[Continente]"
+                      lineageId="Package\Union Bases de datos\Merge Join.Outputs[Merge Join Output].Columns[Continente]" />
+                    <inputColumn
+                      refId="Package\Union Bases de datos\Excel Destination.Inputs[Excel Destination Input].Columns[NOC]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="NOC"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Union Bases de datos\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[NOC]"
+                      lineageId="Package\Union Bases de datos\Merge Join.Outputs[Merge Join Output].Columns[NOC]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Union Bases de datos\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[Pais]"
+                      dataType="wstr"
+                      length="255"
+                      name="Pais" />
+                    <externalMetadataColumn
+                      refId="Package\Union Bases de datos\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[Continente]"
+                      dataType="wstr"
+                      length="255"
+                      name="Continente" />
+                    <externalMetadataColumn
+                      refId="Package\Union Bases de datos\Excel Destination.Inputs[Excel Destination Input].ExternalColumns[NOC]"
+                      dataType="wstr"
+                      length="255"
+                      name="NOC" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Union Bases de datos\Excel Destination.Outputs[Excel Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Excel Destination Error Output"
+                  synchronousInputId="Package\Union Bases de datos\Excel Destination.Inputs[Excel Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Union Bases de datos\Excel Destination.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Union Bases de datos\Excel Destination.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Union Bases de datos\Excel Destination.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Union Bases de datos\Excel Destination.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Union Bases de datos\Merge Join"
+              componentClassID="Microsoft.MergeJoin"
+              contactInfo="Merge Join;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combine two sorted data flows into one using the FULL, LEFT, or INNER join. We recommend this transformation when data flows can be sorted at their sources."
+              name="Merge Join"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of join to perform."
+                  name="JoinType"
+                  typeConverter="JoinType">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of columns in the ordering key."
+                  name="NumKeyColumns">1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the null values are treated as equal values."
+                  name="TreatNullsAsEqual">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Indicates the requested maximum buffers per input before blocking."
+                  name="MaxBuffersPerInput">5</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Union Bases de datos\Merge Join.Inputs[Merge Join Left Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Left Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Union Bases de datos\Merge Join.Inputs[Merge Join Left Input].Columns[NOC]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="NOC"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Union Bases de datos\Ordenar paises 1.Outputs[Sort Output].Columns[NOC]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Union Bases de datos\Merge Join.Inputs[Merge Join Right Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Right Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Union Bases de datos\Merge Join.Inputs[Merge Join Right Input].Columns[Codigo Pais]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Codigo Pais"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Union Bases de datos\Ordenar paises 2.Outputs[Sort Output].Columns[Codigo Pais]" />
+                    <inputColumn
+                      refId="Package\Union Bases de datos\Merge Join.Inputs[Merge Join Right Input].Columns[Pais]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Pais"
+                      lineageId="Package\Union Bases de datos\Ordenar paises 2.Outputs[Sort Output].Columns[Pais]" />
+                    <inputColumn
+                      refId="Package\Union Bases de datos\Merge Join.Inputs[Merge Join Right Input].Columns[Continente]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Continente"
+                      lineageId="Package\Union Bases de datos\Ordenar paises 2.Outputs[Sort Output].Columns[Continente]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Union Bases de datos\Merge Join.Outputs[Merge Join Output]"
+                  isSorted="true"
+                  name="Merge Join Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Union Bases de datos\Merge Join.Outputs[Merge Join Output].Columns[Pais]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Union Bases de datos\Merge Join.Outputs[Merge Join Output].Columns[Pais]"
+                      name="Pais">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Union Bases de datos\Merge Join.Inputs[Merge Join Right Input].Columns[Pais]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Union Bases de datos\Merge Join.Outputs[Merge Join Output].Columns[Continente]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Union Bases de datos\Merge Join.Outputs[Merge Join Output].Columns[Continente]"
+                      name="Continente">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Union Bases de datos\Merge Join.Inputs[Merge Join Right Input].Columns[Continente]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Union Bases de datos\Merge Join.Outputs[Merge Join Output].Columns[NOC]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Union Bases de datos\Merge Join.Outputs[Merge Join Output].Columns[NOC]"
+                      name="NOC"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Union Bases de datos\Merge Join.Inputs[Merge Join Left Input].Columns[NOC]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Union Bases de datos\Ordenar paises 1"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Ordenar paises 1"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Union Bases de datos\Ordenar paises 1.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Union Bases de datos\Ordenar paises 1.Inputs[Sort Input].Columns[NOC]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="NOC"
+                      lineageId="Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Output].Columns[NOC]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Union Bases de datos\Ordenar paises 1.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Union Bases de datos\Ordenar paises 1.Outputs[Sort Output].Columns[NOC]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Union Bases de datos\Ordenar paises 1.Outputs[Sort Output].Columns[NOC]"
+                      name="NOC"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Output].Columns[NOC]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Union Bases de datos\Ordenar paises 2"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Ordenar paises 2"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Union Bases de datos\Ordenar paises 2.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Union Bases de datos\Ordenar paises 2.Inputs[Sort Input].Columns[Codigo Pais]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Codigo Pais"
+                      lineageId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Output].Columns[Codigo Pais]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Union Bases de datos\Ordenar paises 2.Inputs[Sort Input].Columns[Pais]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Pais"
+                      lineageId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Output].Columns[Pais]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Union Bases de datos\Ordenar paises 2.Inputs[Sort Input].Columns[Continente]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Continente"
+                      lineageId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Output].Columns[Continente]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Union Bases de datos\Ordenar paises 2.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Union Bases de datos\Ordenar paises 2.Outputs[Sort Output].Columns[Codigo Pais]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Union Bases de datos\Ordenar paises 2.Outputs[Sort Output].Columns[Codigo Pais]"
+                      name="Codigo Pais"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Union Bases de datos\BD Paises.Outputs[Excel Source Output].Columns[Codigo Pais]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Union Bases de datos\Ordenar paises 2.Outputs[Sort Output].Columns[Pais]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Union Bases de datos\Ordenar paises 2.Outputs[Sort Output].Columns[Pais]"
+                      name="Pais">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Union Bases de datos\BD Paises.Outputs[Excel Source Output].Columns[Pais]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Union Bases de datos\Ordenar paises 2.Outputs[Sort Output].Columns[Continente]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Union Bases de datos\Ordenar paises 2.Outputs[Sort Output].Columns[Continente]"
+                      name="Continente">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Union Bases de datos\BD Paises.Outputs[Excel Source Output].Columns[Continente]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Union Bases de datos.Paths[Excel Source Output]"
+              endId="Package\Union Bases de datos\Ordenar paises 1.Inputs[Sort Input]"
+              name="Excel Source Output"
+              startId="Package\Union Bases de datos\BD Eventos Olimpicos.Outputs[Excel Source Output]" />
+            <path
+              refId="Package\Union Bases de datos.Paths[Excel Source Output1]"
+              endId="Package\Union Bases de datos\Ordenar paises 2.Inputs[Sort Input]"
+              name="Excel Source Output"
+              startId="Package\Union Bases de datos\BD Paises.Outputs[Excel Source Output]" />
+            <path
+              refId="Package\Union Bases de datos.Paths[Merge Join Output]"
+              endId="Package\Union Bases de datos\Excel Destination.Inputs[Excel Destination Input]"
+              name="Merge Join Output"
+              startId="Package\Union Bases de datos\Merge Join.Outputs[Merge Join Output]" />
+            <path
+              refId="Package\Union Bases de datos.Paths[Sort Output]"
+              endId="Package\Union Bases de datos\Merge Join.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\Union Bases de datos\Ordenar paises 1.Outputs[Sort Output]" />
+            <path
+              refId="Package\Union Bases de datos.Paths[Sort Output1]"
+              endId="Package\Union Bases de datos\Merge Join.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Union Bases de datos\Ordenar paises 2.Outputs[Sort Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="178.415094339623,41.6603773584906"
+          Id="Package\Normalizacion atletas"
+          TopLeft="208.333317557471,90.9999974483214" />
+        <NodeLayout
+          Size="179.320754716982,41.6603773584906"
+          Id="Package\Union Bases de datos"
+          TopLeft="204.166651206322,267.1937060502" />
+        <NodeLayout
+          Size="288.905660377359,41.6603773584906"
+          Id="Package\Asociones por equipo y de medallas ganadas"
+          TopLeft="153.333321722299,176.799995042453" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Normalizacion atletas">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="201.056603773585,41.6603773584906"
+          Id="Package\Normalizacion atletas\Transformar abreviacion F"
+          TopLeft="294.16664439115,192.399994605022" />
+        <NodeLayout
+          Size="200.150943396227,41.6603773584906"
+          Id="Package\Normalizacion atletas\Tranformar Abreviacion M"
+          TopLeft="298.333310742299,122.19999657346" />
+        <NodeLayout
+          Size="175.698113207548,41.6603773584906"
+          Id="Package\Normalizacion atletas\Datos Atletas Fuente"
+          TopLeft="308.333309985058,39.8666655487884" />
+        <NodeLayout
+          Size="218.264150943397,41.6603773584906"
+          Id="Package\Normalizacion atletas\Ordenar y eliminar duplicados"
+          TopLeft="290.83331131023,356.199990012001" />
+        <NodeLayout
+          Size="179.320754716982,41.6603773584906"
+          Id="Package\Normalizacion atletas\Creacion tabla atletas"
+          TopLeft="309.999976525518,466.266653592351" />
+        <NodeLayout
+          Size="196.528301886793,41.6603773584906"
+          Id="Package\Normalizacion atletas\Transformar a Mayuscula"
+          TopLeft="299.999977282759,267.799992490774" />
+        <EdgeLayout
+          Id="Package\Normalizacion atletas.Paths[Sort Output]"
+          TopLeft="399.812870332968,397.860367370491">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,68.40628622186"
+              Start="0,0"
+              End="0,60.90628622186">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,60.90628622186" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Normalizacion atletas.Paths[Excel Source Output]"
+          TopLeft="397.295574514622,81.5270429072789">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40.6729536661812"
+              Start="0,0"
+              End="0,33.1729536661812">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.1729536661812" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Normalizacion atletas.Paths[Derived Column Output2]"
+          TopLeft="396.479537252049,234.060371963513">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,33.7396205272617"
+              Start="0,0"
+              End="0,26.2396205272617">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.2396205272617" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Normalizacion atletas.Paths[Derived Column Output1]"
+          TopLeft="396.551864359177,163.860373931951">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,28.5396206730715"
+              Start="0,0"
+              End="0,21.0396206730715">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.0396206730715" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Normalizacion atletas.Paths[Derived Column Output]"
+          TopLeft="399.114757504042,309.460369849265">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,46.7396201627357"
+              Start="0,0"
+              End="0,39.2396201627357">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.2396201627357" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Normalizacion atletas\Datos Atletas Fuente">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Normalizacion atletas\Creacion tabla atletas">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Union Bases de datos">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="124.075471698114,41.6603773584906"
+          Id="Package\Union Bases de datos\BD Paises"
+          TopLeft="105.999996185303,134.999995141659" />
+        <NodeLayout
+          Size="158.490566037736,41.6603773584906"
+          Id="Package\Union Bases de datos\Excel Destination"
+          TopLeft="864.166601228392,83.1999976670367" />
+        <NodeLayout
+          Size="157.584905660378,41.6603773584906"
+          Id="Package\Union Bases de datos\Ordenar paises 1"
+          TopLeft="343.999987620227,32.9999988124055" />
+        <NodeLayout
+          Size="128.603773584906,41.6603773584906"
+          Id="Package\Union Bases de datos\Merge Join"
+          TopLeft="631.999977255767,77.9999971929586" />
+        <NodeLayout
+          Size="180.22641509434,41.6603773584906"
+          Id="Package\Union Bases de datos\BD Eventos Olimpicos"
+          TopLeft="105.380948124942,30.1142846098786" />
+        <NodeLayout
+          Size="157.584905660378,41.6603773584906"
+          Id="Package\Union Bases de datos\Ordenar paises 2"
+          TopLeft="341.999987692203,132.999995213635" />
+        <EdgeLayout
+          Id="Package\Union Bases de datos.Paths[Sort Output1]"
+          TopLeft="499.584893352581,153.83018389288">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="132.415083903187,-49.3899351275943"
+              Start="0,0"
+              End="124.915083903187,-49.3899351275943">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="72.5105997709969,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="72.5105997709969,0"
+                    Point2="76.5105997709969,0"
+                    Point3="76.5105997709969,-4" />
+                  <mssgle:LineSegment
+                    End="76.5105997709969,-45.3899351275943" />
+                  <mssgle:CubicBezierSegment
+                    Point1="76.5105997709969,-45.3899351275943"
+                    Point2="76.5105997709969,-49.3899351275943"
+                    Point3="80.5105997709969,-49.3899351275943" />
+                  <mssgle:LineSegment
+                    End="124.915083903187,-49.3899351275943" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Union Bases de datos.Paths[Sort Output]"
+          TopLeft="501.584893280605,53.8301874916508">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="130.415083975163,39.3899354874713"
+              Start="0,0"
+              End="122.915083975163,39.3899354874713">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="71.3549822271003,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="71.3549822271003,0"
+                    Point2="75.3549822271003,0"
+                    Point3="75.3549822271003,4" />
+                  <mssgle:LineSegment
+                    End="75.3549822271003,35.3899354874713" />
+                  <mssgle:CubicBezierSegment
+                    Point1="75.3549822271003,35.3899354874713"
+                    Point2="75.3549822271003,39.3899354874713"
+                    Point3="79.3549822271003,39.3899354874713" />
+                  <mssgle:LineSegment
+                    End="122.915083975163,39.3899354874713" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Union Bases de datos.Paths[Merge Join Output]"
+          TopLeft="760.603750840673,101.430186109243">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="103.562850387719,0"
+              Start="0,0"
+              End="96.0628503877189,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="96.0628503877189,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Union Bases de datos.Paths[Excel Source Output1]"
+          TopLeft="230.075467883416,154.830183856892">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="111.924519808787,0"
+              Start="0,0"
+              End="104.424519808787,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="104.424519808787,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Union Bases de datos.Paths[Excel Source Output]"
+          TopLeft="285.607363219281,52.3873303903873">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="58.3926244009458,0"
+              Start="0,0"
+              End="50.8926244009458,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="50.8926244009458,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Union Bases de datos\BD Paises">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Union Bases de datos\Excel Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Union Bases de datos\BD Eventos Olimpicos">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
